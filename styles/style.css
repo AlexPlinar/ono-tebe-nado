@@ -1,1 +1,10 @@
 /* место для вашего кода */
+.header__logo_image{
+    height: 100px;
+    display: flex;
+    justify-content: left;
+
+}
+.header__logo{
+    background-color: aquamarine;
+}
