@@ -2,13 +2,15 @@
 .header__logo_image {
   height: 105px;
   width: 148px;
+  background-image: url("/images/logo-black.svg");
+  background-repeat: no-repeat;
 }
 
 .header__logo {
   grid-column: 6 / span 2;
   display: flex;
   justify-content: center;
-  margin-left: 3px;
+  margin-left: 14px;
 }
 
 .header {
@@ -63,11 +65,32 @@
 .header__address-map {
   text-wrap: wrap;
   line-height: 22px;
+  text-decoration: none;
 }
 
 .cover {
   width: 1100px;
   height: 757px;
+  background-image: url(/images/cover.jpg);
+  /*   так логичней
+  background-size: cover;
+  background-position: center; */
+
+  /* так приходится */
+  background-size: 1400px;
+  background-position: -150px;
+  color: white;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  background-color: black;
+  opacity: 60%;
+  height: 757px;
+  width: 1100px;
+  z-index: 1;
+ 
 }
 
 .cover_title {
@@ -76,27 +99,61 @@
   height: 355px;
   top: 165px;
   left: 50px;
- 
+
   font-size: 100px;
   font-weight: 700;
   letter-spacing: 0.3em;
   text-transform: uppercase;
+  z-index: 2;
 }
 
 .aligned-text-left {
   display: block;
-  padding: 
+  position: relative;
+  
 }
 
 .aligned-text-center {
   display: block;
   text-align: center;
   padding: 9px 58px 0 0;
-
 }
 
-.aligned-text-right{
- display: block;
- text-align: end;
- padding: 3px 0 0 5px;
+.aligned-text-right {
+  display: block;
+  text-align: end;
+  padding: 3px 0 0 5px;
+}
+
+.letter-spacing-extended {
+  position: relative;
+  left: 30px;
+}
+
+.cover__description {
+  position: absolute;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  top: 667px;
+  left: 82px;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.cover__description-text {
+  word-spacing: 18.1px;
+}
+
+.bet-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 712px;
+  bottom: 40px;
+  width: 256px;
+  height: 51px;
+  border: 1px solid white;
 }
