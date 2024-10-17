@@ -123,9 +123,9 @@
   display: flex;
   position: relative;
   align-items: center;
-  gap: 77px;
+  gap: 78px;
   z-index: 2;
-  padding-left: 25px;
+  padding-left: 27px;
   font-weight: 400;
   font-size: 22px;
   line-height: 28px;
@@ -310,11 +310,15 @@
 }
 
 .footer__menu {
-  min-width: 149px;
+  min-width: 153px;
   font-weight: 400;
   font-size: 18px;
   line-height: 20.7px;
   text-align: center;
+  text-wrap: nowrap;
+}
+
+.footer__links-list-item {
   text-wrap: nowrap;
 }
 
