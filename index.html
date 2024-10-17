@@ -15,7 +15,7 @@
   <header class="header">
     <nav class="header__menu">
       <ul class="header__links-list">
-        
+
         <li class="header__links-list-item no-bullit">
           <a class="header__link no-bullit" href="#0">главная</a>
         </li>
@@ -32,7 +32,7 @@
     </nav>
 
     <a class="header__logo" href="#0">
-      <img class="header__logo_image" src="./images/logo-black.svg" alt="Логотип">
+      <img class="header__logo-img" src="./images/logo-black.png" alt="Логотип">
     </a>
 
     <address class="header__address">
@@ -45,20 +45,33 @@
   <main>
     <section class="cover">
       <div class="overlay"></div>
-      <h1 class="cover_title">
-        <span class="aligned-text-left">Он<span class="letter-spacing-extended">о</span></span>
-        <span class="aligned-text-center">Теб<span class="letter-spacing-extended">е</span></span>
-        <span class="aligned-text-right">Н<span class="letter-spacing-extended">адо</span></span>
+      <h1 class="cover__title">
+
+        <span class="text text_left">
+          <span class="text__start"> Он </span>
+          <span class="text__end">о</span>
+        </span>
+
+        <span class="text text_center">
+          <span class="text__start"> Теб </span>
+          <span class="text__end">е</span>
+        </span>
+
+        <span class="text text_right">
+          <span class="text__start"> Н </span>
+          <span class="text__end">адо</span>
+        </span>
+
       </h1>
 
-      <span class="cover__description">
-        <span class="cover__description-text">
+      <div class="cover__description">
+        <p class="cover__description-text">
           Аукцион вещей, в которые никто не верил
-        </span>
-        <span class="bet-button">
+        </p>
+        <a class="bet-button">
           Сделать ставку
-        </span>
-      </span>
+        </a>
+      </div>
     </section>
 
     <section class="lots">
@@ -70,9 +83,9 @@
       <ul class="lots__card-list no-bullit">
 
         <li class="lots__card-list-item">
-          <div class="overlay"></div>
           <a class="card-link" href="#0">
             <article class="card card_type_film">
+              <div class="overlay"></div>
               <h3 class="card__title"> Фильм режиссёра, который бросил киношколу</h3>
               <p class="card__text">
                 Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка,
@@ -83,9 +96,9 @@
         </li>
 
         <li class="lots__card-list-item">
-          <div class="overlay"></div>
           <a class="card-link" href="#0">
             <article class="card card_type_book">
+              <div class="overlay"></div>
               <h3 class="card__title">Книга, где описан один скучный день из жизни рекламного агента</h3>
               <p class="card__text">
                 Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский.
@@ -98,9 +111,9 @@
         </li>
 
         <li class="lots__card-list-item">
-          <div class="overlay"></div>
           <a class="card-link" href="#0">
             <article class="card card_type_picture">
+              <div class="overlay"></div>
               <h3 class="card__title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
               <p class="card__text">
                 Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку.
@@ -173,22 +186,23 @@
 
       <li class="footer__social-list-item">
         <a class="footer__social-link">
-          <img class="footer__social-link-youtube" src="./images/yt.svg" alt="YouTube">
+          <img class="footer__social-link-youtube" src="./images/YouTube.png" alt="YouTube">
         </a>
       </li>
 
       <li class="footer__social-list-item">
         <a class="footer__social-link">
-          <img class="footer__social-link-vk" src="./images/vk.svg" alt="VK">
+          <img class="footer__social-link-vk" src="./images/VK.png" alt="VK">
         </a>
       </li>
 
       <li class="footer__social-list-item">
         <a class="footer__social-link">
-          <img class="footer__social-link-pinterest" src="./images/pinterest.svg" alt="Pinterest">
+          <img class="footer__social-link-pinterest" src="./images/pinterest.png" alt="Pinterest">
         </a>
       </li>
     </ul>
   </footer>
 </body>
+
 </html>
