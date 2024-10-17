@@ -125,7 +125,7 @@
   align-items: center;
   gap: 77px;
   z-index: 2;
-  padding-left: 31px;
+  padding-left: 30px;
   font-weight: 400;
   font-size: 22px;
   line-height: 28px;
@@ -314,6 +314,7 @@
   font-size: 18px;
   line-height: 20.7px;
   text-align: center;
+  text-wrap: nowrap;
 }
 
 .footer__social-list {
