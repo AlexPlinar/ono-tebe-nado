@@ -125,7 +125,7 @@
   align-items: center;
   gap: 77px;
   z-index: 2;
-  padding-left: 30px;
+  padding-left: 25px;
   font-weight: 400;
   font-size: 22px;
   line-height: 28px;
@@ -135,6 +135,7 @@
 
 .cover__description-text {
   word-spacing: 18.1px;
+  text-wrap: nowrap;
 }
 
 .bet-button {
