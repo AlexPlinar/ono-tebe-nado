@@ -43,9 +43,11 @@
   text-decoration: none;
 }
 
-.underline {
-  text-decoration: underline;
-  text-underline-offset: 4px;
+.address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24.3px;
 }
 
 .header__address {
@@ -55,16 +57,12 @@
   flex-direction: column;
   justify-content: start;
   align-self: start;
-  gap: 4px;
   margin-top: 7px;
   padding-left: 85px;
-  font-style: normal;
 }
 
 .header__address-map {
   text-wrap: wrap;
-  line-height: 22px;
-  text-decoration: none;
 }
 
 .cover {
@@ -107,14 +105,11 @@
 }
 
 .text_center {
-  display: flex;
-  justify-content: center;
   margin-top: 9px;
-  margin-right: 30px;
+  margin-left: 286px;
 }
 
 .text_right {
-  display: flex;
   margin-top: 3px;
   margin-left: 585px;
 }
@@ -134,16 +129,19 @@
 }
 
 .cover__description-text {
-  word-spacing: 18.1px;
   text-wrap: nowrap;
+  word-spacing: 18.1px;
 }
 
 .bet-button {
+  all: unset;
   display: flex;
-  position: relative;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+
   border: 1px solid white;
+  background-color: transparent;
   min-width: 256px;
   min-height: 51px;
   font-family: Raleway, sans-serif;
@@ -262,7 +260,8 @@
 
 .about__logo-img {
   position: relative;
-  padding: 61px 45px 64px 46.5px;
+  width: auto;
+  height: auto;
 }
 
 .about__content {
@@ -303,19 +302,15 @@
   text-wrap: wrap;
   display: flex;
   flex-direction: column;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24.3px;
 }
 
 .footer__menu {
+  text-wrap: nowrap;
   min-width: 153px;
   font-weight: 400;
   font-size: 18px;
   line-height: 20.7px;
   text-align: center;
-  text-wrap: nowrap;
 }
 
 .footer__links-list-item {
@@ -329,6 +324,7 @@
 }
 
 .footer__social-list-item {
+  /*Здесь минимальная, а не максимальная ширина и высота*/
   min-width: 48px;
   min-height: 48px;
 }
